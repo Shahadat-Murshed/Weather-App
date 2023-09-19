@@ -33,10 +33,15 @@ let weather = {
 document.querySelector(".search-eng").addEventListener("click", function () {
   weather.search();
 });
+
 document.querySelector(".search-eng").addEventListener("keyup", function (e) {
   if (e.key == "Enter") {
     weather.search();
   }
+});
+
+document.querySelector("button").addEventListener("click", function () {
+  weather.search();
 });
 
 weather.fetchWeather("Chittagong");
